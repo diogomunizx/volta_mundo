@@ -6,12 +6,20 @@ html, body {
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-image: linear-gradient(rgba(173, 216, 230, 0.7), rgba(173, 216, 230, 0.7)), url('img/teste.jpg');
+    background-image: linear-gradient(rgba(173, 216, 230, 0.7), rgba(173, 216, 230, 0.7)), url('img/pena_place.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
   }
   
+.navbar-brand {
+    color: #F1E4C9 !important; /* Muda a cor do texto para branco */
+}
+
+/* Caso você queira mudar a cor do texto quando o mouse passa sobre o link */
+.navbar-brand:hover {
+    color: #FFCC00 !important; /* Muda a cor para dourado quando passar o mouse */
+}
 
 .hh {
     transform: scale(1.5); /* Aumenta 1.5x */
@@ -41,7 +49,7 @@ nav{
 }
 
 .tudo {
-    background-color: #ffffff; /* Cor de fundo */
+    background-color: #F1E4C9; /* Cor de fundo */
     background-size: cover; /* Ajusta a imagem (se tiver) para cobrir toda a área */
     background-position: center; /* Centraliza a imagem */
     background-repeat: no-repeat; /* Evita repetição da imagem */
@@ -54,7 +62,7 @@ nav{
     align-items: center; /* Centraliza verticalmente imagem e texto */
     justify-content: space-between; /* Espaço entre imagem e texto */
     max-width: 800px;
-    margin: 150px auto; /* Centraliza as divs horizontalmente e espaça verticalmente */
+    margin: 100px auto; /* Centraliza as divs horizontalmente e espaça verticalmente */
     gap: 20px; /* Espaço entre imagem e texto */
 }
 
@@ -64,6 +72,7 @@ nav{
 
 .content {
     flex-direction: row-reverse; /* Inverte a ordem: texto à esquerda, imagem à direita */
+    padding-top: 20px;
 }
 
 .hii,
