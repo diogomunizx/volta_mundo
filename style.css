@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+
+.hh {
+    transform: scale(1.5); /* Aumenta 1.5x */
+    transform-origin: center; /* Escala a partir do centro */
+}
+
+a:hover{
+    font-size: 30px;
+    transition: font-size 0.3s ease;
+}
+
+.hh:hover {
+    transform: scale(2); /* Escala para o dobro ao passar o mouse */
+    transition: transform 0.3s ease; /* Animação suave */
+}
+
+
+.content, .hom {
+    display: block;
+    margin: 0%;
+    padding-top: 0%;
+    width: 100%; /* Ajuste conforme necessário */
+}
+
+.content {
+    padding-top: 0px; /* Espaçamento para não sobrepor a navbar */
+    position: relative;
+}
+
+nav{
+    padding: 0;
+    margin: 0;
+    z-index: auto;
+}
+
+.him{
+    position: absolute;
+}
+  
+  
