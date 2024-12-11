@@ -1,6 +1,15 @@
+html, body {
+    height: 100%; /* Garante que a altura da página seja 100% da altura da janela */
+    margin: 0; /* Remove a margem padrão do navegador */
+}
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    background-image: linear-gradient(rgba(173, 216, 230, 0.7), rgba(173, 216, 230, 0.7)), url('img/teste.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
   
 
@@ -20,26 +29,64 @@ a:hover{
 }
 
 
-.content, .hom {
-    display: block;
-    margin: 0%;
-    padding-top: 0%;
-    width: 100%; /* Ajuste conforme necessário */
-}
-
-.content {
-    padding-top: 0px; /* Espaçamento para não sobrepor a navbar */
-    position: relative;
-}
-
 nav{
     padding: 0;
     margin: 0;
     z-index: auto;
+    display: block;
 }
 
 .him{
     position: absolute;
 }
-  
-  
+
+.tudo {
+    background-color: #ffffff; /* Cor de fundo */
+    background-size: cover; /* Ajusta a imagem (se tiver) para cobrir toda a área */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita repetição da imagem */
+    min-height: 100%; /* Garante que a altura mínima do elemento cubra toda a altura da página */
+}
+
+.content1,
+.content {
+    display: flex; /* Flexbox para alinhar os elementos */
+    align-items: center; /* Centraliza verticalmente imagem e texto */
+    justify-content: space-between; /* Espaço entre imagem e texto */
+    max-width: 800px;
+    margin: 150px auto; /* Centraliza as divs horizontalmente e espaça verticalmente */
+    gap: 20px; /* Espaço entre imagem e texto */
+}
+
+.content1 {
+    flex-direction: row; /* Alinha os elementos na ordem: imagem à esquerda, texto à direita */
+}
+
+.content {
+    flex-direction: row-reverse; /* Inverte a ordem: texto à esquerda, imagem à direita */
+}
+
+.hii,
+.hii1 {
+    width: 150px;
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 8px;
+}
+
+.txt,
+.txt1 {
+    flex: 1; /* Faz o texto ocupar o espaço restante */
+}
+
+@media (max-width: 768px) {
+    .content1,
+    .content {
+        flex-direction: column; /* Empilha os elementos verticalmente */
+        text-align: center;
+    }
+
+    .hii,
+    .hii1 {
+        margin: 0 auto 20px; /* Centraliza as imagens no modo responsivo */
+    }
+}
