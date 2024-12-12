@@ -1,5 +1,6 @@
 html, body {
     height: 100%; /* Garante que a altura da página seja 100% da altura da janela */
+    width: 100%;
     margin: 0; /* Remove a margem padrão do navegador */
 }
 
@@ -169,12 +170,9 @@ nav{
     color: #FFCC00; /* Cor dos links ao passar o mouse */
 }
 
+.ttx,
 .h1hs{
     color: #333333;
     margin-left: 40px;
-}
-
-.ttx{
-    color: #333333;
-    margin-left: 40px;
+    padding: 0%;
 }
