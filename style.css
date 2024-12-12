@@ -6,36 +6,52 @@ html, body {
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-image: linear-gradient(rgba(173, 216, 230, 0.7), rgba(173, 216, 230, 0.7)), url('img/pena_place.jpg');
+    background-image: linear-gradient(rgba(173, 216, 230, 0.7), rgba(173, 216, 230, 0.7)), url('img/fundo.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-color: #006747 !important;
   }
-  
-.navbar-brand {
-    color: #F1E4C9 !important; /* Muda a cor do texto para branco */
+
+
+.navbar {
+    height: 70px; /* Altura fixa */
+    overflow: hidden; /* Impede que elementos saiam da navbar */
+    display: flex;
+    margin-bottom: 100px;
 }
 
-/* Caso você queira mudar a cor do texto quando o mouse passa sobre o link */
+.navbar-brand {
+    color: #F1E4C9 !important;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+
 .navbar-brand:hover {
-    color: #FFCC00 !important; /* Muda a cor para dourado quando passar o mouse */
+    color: #FFCC00 !important;
+    transform: scale(1.4); /* Aumenta sem alterar o layout */
+}
+
+.nav-custom-font {
+    font-size: 15px !important; /* Ajuste o tamanho conforme necessário */
 }
 
 .hh {
-    transform: scale(1.5); /* Aumenta 1.5x */
-    transform-origin: center; /* Escala a partir do centro */
-}
-
-a:hover{
-    font-size: 30px;
-    transition: font-size 0.3s ease;
+    transform: scale(1.3);
+    transition: transform 0.3s ease; /* Transição para hover */
 }
 
 .hh:hover {
-    transform: scale(2); /* Escala para o dobro ao passar o mouse */
-    transition: transform 0.3s ease; /* Animação suave */
+    transform: scale(1.4); /* Efeito hover sem alterar layout */
 }
 
+.navbar .container {
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: space-between; /* Espaça os itens */
+    max-width: 1200px; /* Define um limite para largura */
+    margin: 0 auto; /* Centraliza horizontalmente */
+}
 
 nav{
     padding: 0;
@@ -54,6 +70,7 @@ nav{
     background-position: center; /* Centraliza a imagem */
     background-repeat: no-repeat; /* Evita repetição da imagem */
     min-height: 100%; /* Garante que a altura mínima do elemento cubra toda a altura da página */
+    padding-bottom: 0px;
 }
 
 .content1,
@@ -62,7 +79,8 @@ nav{
     align-items: center; /* Centraliza verticalmente imagem e texto */
     justify-content: space-between; /* Espaço entre imagem e texto */
     max-width: 800px;
-    margin: 100px auto; /* Centraliza as divs horizontalmente e espaça verticalmente */
+    margin: 50px auto; /* Centraliza as divs horizontalmente e esa vepaçrticalmente */
+    padding-top: 50px auto;
     gap: 20px; /* Espaço entre imagem e texto */
 }
 
@@ -98,4 +116,64 @@ nav{
     .hii1 {
         margin: 0 auto 20px; /* Centraliza as imagens no modo responsivo */
     }
+
+    .footer {
+        padding: 15px 0;
+    }
+    .footer-links {
+        flex-direction: column; /* Empilha os links verticalmente */
+        gap: 10px; /* Reduz o espaçamento entre os links */
+    }
+}
+
+.footer {
+    background-color: #D40000; /* Cor de fundo */
+    color: #F1E4C9; /* Cor do texto */
+    text-align: center; /* Centraliza o conteúdo */
+    padding: 20px 0; /* Espaçamento interno */
+    margin-top: 30px; /* Espaçamento superior opcional */
+}
+
+.footer .container {
+    max-width: 1200px;
+    margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+.footer p {
+    margin: 0; /* Remove margens padrão */
+    font-size: 14px; /* Tamanho da fonte */
+}
+
+.footer-links {
+    list-style: none; /* Remove os marcadores da lista */
+    padding: 0; /* Remove o padding */
+    margin: 10px 0 0; /* Margem acima da lista */
+    display: flex;
+    justify-content: center; /* Centraliza os links */
+    gap: 15px; /* Espaçamento entre os links */
+}
+
+.footer-links li {
+    display: inline; /* Mantém os itens em linha */
+}
+
+.footer-links a {
+    color: #F1E4C9; /* Cor dos links */
+    text-decoration: none; /* Remove sublinhado */
+    font-size: 14px;
+    transition: color 0.3s ease; /* Efeito de transição suave */
+}
+
+.footer-links a:hover {
+    color: #FFCC00; /* Cor dos links ao passar o mouse */
+}
+
+.h1hs{
+    color: #333333;
+    margin-left: 40px;
+}
+
+.ttx{
+    color: #333333;
+    margin-left: 40px;
 }
