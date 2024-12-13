@@ -5,23 +5,28 @@ html, body {
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
+    margin: 0; /* Remove margens padrão */
+    padding-top: 200px; /* Espaço equivalente à altura da navbar */
     background-color: #006747 !important;
     background-image: linear-gradient(rgba(173, 216, 230, 0.7), rgba(173, 216, 230, 0.7)), url('img/fundo.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-  }
+}
 
 
-.navbar {
+  .navbar {
     height: 70px; /* Altura fixa */
     overflow: hidden; /* Impede que elementos saiam da navbar */
     display: flex;
-    margin-bottom: 100px;
+    margin-bottom: 100px; /* Espaço abaixo da navbar */
+    position: fixed; /* Fixa a navbar na página */
+    top: 0; /* Posiciona no topo */
+    width: 100%; /* Faz a navbar ocupar toda a largura */
+    z-index: 1000; /* Garante que a navbar fique acima de outros elementos */
+    background-color: #D40000; /* Cor de fundo, para evitar transparência */
 }
+
 
 .navbar-brand {
     color: #F1E4C9 !important;
@@ -84,6 +89,7 @@ nav{
     margin: 50px auto; /* Centraliza as divs horizontalmente e esa vepaçrticalmente */
     padding-top: 50px auto;
     gap: 20px; /* Espaço entre imagem e texto */
+    margin-bottom: 30px; /* Espaçamento antes do footer */
 }
 
 .content1 {
